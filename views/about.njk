@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+
+        <div id="wrapper">
+            <img src="{{ about.avatar }}" alt="">
+            <h1>{{ about.name }}</h1>
+            <h2>{{ about.role}}</h2>
+            <p>{{ about.description }}</p>
+        </div>
+      
+        <div class="icons">
+            {% for link in about.links %}
+
+                 <a href="https://www.linkedin.com/in/flavio-santos-746000180/" target="_blank"><img src="{{ link.url }}" alt="" ></a>
+                 
+            {% endfor %}
+        </div>
+        
+    {% endblock %}

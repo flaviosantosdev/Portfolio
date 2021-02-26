@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+
+        <div id="wrapper">
+           <h1>Trabalhos</h1>
+        </div>
+    
+        <section class="cards">
+
+            {% for item in items %}
+                    <div class="card" id="{{ item.id }}">
+                <div class="card__image-container">
+                    <img src="img/capa.jpg" alt="">
+                    {% if item.featured %}
+                        <div class="featured">New</div>
+                    {% endif%}
+                </div>
+    
+                <div class="card__content">
+                    <h4>{{ item.title }}</h4>
+                </div>    
+                    <div class="card__info">
+                        <p>Tecnologia usada</p>
+                        <p  class="card__price">{{ item.tecnologia }}</p>
+                    </div>
+              </div>
+            {% endfor %}
+
+      
+            
+        </section>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a href="" class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+                <div class="modal__content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        
+    {% endblock %}

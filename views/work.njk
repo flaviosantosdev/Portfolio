@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+
+        <div id="wrapper">
+           <h1>{{ item.title }}</h1>
+        </div>
+    
+        <section class="work">
+
+            
+                <div class="card" id="{{ item.id }}">
+                <div class="card__image-container">
+                    <img src="img/capa.jpg" alt="">
+                    {% if item.featured %}
+                        <div class="featured">New</div>
+                    {% endif%}
+                </div>
+    
+                <div class="card__content">
+                    <h4>{{ item.title }}</h4>
+                </div>    
+                    <div class="card__info">
+                        <p>Tecnologia usada</p>
+                        <p  class="card__price">{{ item.tecnologia }}</p>
+                    </div>
+              </div>
+            
+
+      
+            
+        </section>
+
+        
+        
+    {% endblock %}
