@@ -2,15 +2,16 @@ import  linkedin from '../../assets/linkedin.svg'
 import  instagram from '../../assets/instagram.svg'
 import  github from '../../assets/github.svg'
 import styles from './styles.module.css'
+import { Link } from 'react-router-dom'
 
 export function Footer(){
 
     return(
         <footer className={styles.footer}>
             
-            <a href="">
+            <Link to="https://www.linkedin.com/in/flavio-santosdev/" target='_blank'>
                 <img src={linkedin} alt="" />
-            </a>
+             </Link>
             <a href="">
                 <img src={instagram} alt="" />
             </a>

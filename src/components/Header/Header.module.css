@@ -3,6 +3,11 @@
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width:1112px){
+    .navigation{
+        flex-direction: column;
+    }
+}
 .navigation ul {
     display: flex;
     list-style: none;
