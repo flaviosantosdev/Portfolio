@@ -1,0 +1,30 @@
+.heroContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 180px;
+ 
+}
+.profile{
+    width: 243px;
+    height:243px;
+    border-radius: 50%;
+    border:2px solid rgb(143, 144, 145)
+}
+.title{
+    color:#21243D;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+.titleContainer{
+    animation: animeLeft .3s forwards;
+}
+@keyframes animeLeft {
+    from{
+        transform: translateX(-22px);
+    }
+    to{
+        transform: translateX(22px);
+    }
+}

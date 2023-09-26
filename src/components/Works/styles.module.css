@@ -1,0 +1,32 @@
+.works{
+    max-width: 1080px;
+    margin:0 auto;
+}
+.works h1{
+    text-align: center;
+    font-size: 32px;
+}
+.cardwork{
+    display: flex;
+    margin-top: 22px;
+    border-bottom:3px solid #d6d6d6;
+
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor:pointer;
+    transition: box-shadow .3s;
+}
+.cardwork:hover{
+    background: rgb(221, 221, 221);
+    cursor: pointer;
+    box-shadow: 7px 9px 0px 0px #265574;
+}
+.cardwork h3{
+    font-size:32px;
+    text-align: center;
+}
+.cardwork img{
+    max-width: 250px;
+    box-shadow: 2px 1px 1px rgb(202, 201, 201);
+    margin-right: 18px;
+}

@@ -1,0 +1,30 @@
+.blog{
+    background:#1e2a31;
+    margin-top:70px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+   max-width: 1080px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap:32px;  
+}
+.cardBlog{
+    height: 250px;
+    background: rgb(202, 202, 202);
+    border:1px solid #a39e9e;
+    transition: box-shadow .3s;
+    padding:4px;
+  
+ }
+ .cardBlog:hover{
+    cursor: pointer;
+    box-shadow: 7px 9px 0px 0px #FF6464;
+ }
+ .navigation{
+   display: flex;
+ }
