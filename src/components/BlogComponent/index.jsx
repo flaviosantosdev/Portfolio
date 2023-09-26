@@ -11,7 +11,7 @@ export const BlogComponent = () => {
         <section  className={styles.blog}>
             <div className={styles.container}>
                 <div className={styles.cardBlog}>
-                    <span>CashQ - plataforma de finanças, está em desenvolvimento por mim</span>
+                    <span>CashQ - plataforma de finanças, está em desenvolvimento por mim(nao possui versao mobile ainda)</span>
                    <Link to="https://cash-q-project.vercel.app/" target='_blank'>
                     <img src={cashQ} alt="" />
                    </Link>
