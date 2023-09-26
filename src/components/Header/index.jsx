@@ -9,7 +9,6 @@ export const Header = () => {
         <header className={`${styles.navContainer} container`}>
             <nav className={styles.navigation}>
                 <div>
-                   
                 </div>
                 <ul>
                     <li><Link to="/"><MdHome/>Home</Link></li>|
