@@ -39,6 +39,14 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   transition: box-shadow .3s;
 }
+@media (max-width:1112px) {
+  .button{
+    padding: 16px;
+    width: 220px;
+    text-align: center;
+  }
+    
+}
 .button:hover{
 
   cursor: pointer;

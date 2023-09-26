@@ -2,8 +2,7 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
-import { Blog } from './pages/Blog'
-import { Contact } from './pages/Contact'
+import { Error } from './pages/Error'
 
 function App() {
   
@@ -12,8 +11,9 @@ function App() {
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />}/>
-            <Route path="blog" element={<Blog/>}/>
-            <Route path="contato" element={<Contact />}/>
+            <Route path="*" element={<Error />} />
+            <Route path="blog" element={<Home />}/>
+            <Route path="contato" element={<Home />}/>
         </Routes>
     </BrowserRouter>
   )

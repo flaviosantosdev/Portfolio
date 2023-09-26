@@ -13,6 +13,22 @@
    grid-template-columns: 1fr 1fr;
    gap:32px;  
 }
+@media (max-width:1112px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+  }
+  .cardBlog{
+    height: 150px;
+    width: 410px;
+    background: rgb(202, 202, 202);
+    border:1px solid #a39e9e;
+    transition: box-shadow .3s;
+    padding:4px;
+  
+ }
+}
 .cardBlog{
     height: 250px;
     background: rgb(202, 202, 202);
@@ -20,6 +36,15 @@
     transition: box-shadow .3s;
     padding:4px;
   
+ }
+ .cardBlog img {
+   max-width: 100%;
+   
+ }
+ .cardBlog span{
+   font-weight: bold;
+   font-size: 18px;
+   color:#773939;
  }
  .cardBlog:hover{
     cursor: pointer;
